@@ -23,14 +23,14 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", onFormSubmit);
 function onFormSubmit(event) {
-    event.preventDefaut();
+    event.preventDefault();
     const formElements = event.currentTarget.elements;
     if (formElements.email.value === "" || formElements.password.value === "") {
         alert("Please fill in all the fields!");
         return;
     }
 
-    const mail = forElements.email.value;
+    const mail = formElements.email.value;
 
     const pass = formElements.password.value;
 
@@ -38,3 +38,7 @@ function onFormSubmit(event) {
     console.log(formData);
     event.currentTarget.reset();
 }
+
+
+
+

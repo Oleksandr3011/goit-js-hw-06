@@ -30,4 +30,3 @@ const array = ingredients.map(ingredient => {
 
 list.append(...array)
   
-console.log(list);
